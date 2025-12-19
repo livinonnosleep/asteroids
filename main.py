@@ -8,7 +8,7 @@ def main():
     pygame.init()
     updatable = pygame.sprite.Group()
     drawable = pygame.sprite.Group()
-    Player.containers = (updateable, drawable)
+    Player.containers = (updatable, drawable)
     clock = pygame.time.Clock()
     dt = 0
 
