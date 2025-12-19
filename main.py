@@ -6,7 +6,7 @@ from player import *
 
 def main():
     pygame.init()
-    updateable = pygame.sprite.Group()
+    updatable = pygame.sprite.Group()
     drawable = pygame.sprite.Group()
     Player.containers = (updateable, drawable)
     clock = pygame.time.Clock()
@@ -23,7 +23,7 @@ def main():
                 return
 
         screen.fill("black")
-        updateable.update(dt)
+        updatable.update(dt)
         for obj in drawable:
             obj.draw(screen)
 
